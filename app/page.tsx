@@ -89,32 +89,7 @@ function HeroSection() {
  * Placeholder sections for Phase 1.
  * Full implementations in subsequent phases.
  */
-function ArchiveSection() {
-  return (
-    <section id="archive" className="min-h-screen px-6 md:px-12 py-24">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="font-display text-3xl md:text-5xl font-bold mb-12">
-          PROJECT ARCHIVE
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="p-6 bg-compiler-surface border border-compiler-border rounded-lg hover:border-compiler-primary/50 transition-colors cursor-pointer"
-              data-warp
-            >
-              <div className="h-40 bg-compiler-border rounded mb-4" />
-              <h3 className="font-mono text-compiler-primary mb-2">Project_0{i}</h3>
-              <p className="text-compiler-muted text-sm">
-                Interactive web experience with 3D elements
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+import { ArchiveSection } from '@/components/sections/ArchiveSection';
 
 function StackSection() {
   return (
